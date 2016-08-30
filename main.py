@@ -88,7 +88,6 @@ class MainHandler(webapp2.RequestHandler):
         self.write_form()
 
     def post(self):
-        error = ""
         username = self.request.get("username")
         password = self.request.get("password")
         passwordConfirm = self.request.get("passwordConfirm")
